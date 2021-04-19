@@ -1,4 +1,4 @@
-n1, n2 = map(int, input().split())
+n1, n2, n3 = map(int, input().split())
 
 print(n1 + n2)
 print(n1 - n2)
