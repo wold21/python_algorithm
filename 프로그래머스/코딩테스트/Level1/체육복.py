@@ -16,3 +16,4 @@ n = 5
 lost = [2, 4]
 reverse = [1, 3, 5]
 print(solution(n, lost, reverse))
+# 프린트 처리
