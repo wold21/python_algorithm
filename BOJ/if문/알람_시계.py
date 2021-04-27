@@ -16,14 +16,17 @@ n1, n2 = map(int, input().split())
 if n1 == 0:
     n1 = 24
 time = ((n1 * 60) + n2) - 45
-h, m = map(int, divmod(time, 60))
+h, m = divmod(time, 60)
+if h == 24:
+    h = 0
 print(h, m)
 
+
 # 참고 코드
-n1, n2 = map(int, input().split())
-if n2 > 44:
-    print(n1, n2-45)
-elif n2 <= 44 and n1 >= 1:
-    print(n1-1, n2+15)
-else:
-    print(23, n2+15)
+# n1, n2 = map(int, input().split())
+# if n2 > 44:
+#     print(n1, n2-45)
+# elif n2 <= 44 and n1 >= 1:
+#     print(n1-1, n2+15)
+# else:
+#     print(23, n2+15)
